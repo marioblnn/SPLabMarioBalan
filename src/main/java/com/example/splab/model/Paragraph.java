@@ -9,6 +9,10 @@ public class Paragraph extends Element{
         this.text = text;
     }
 
+    public void printParagraph(AlignStrategy alignStrategy){
+        alignStrategy.render(this);
+    }
+
     @Override 
     public String toString(){
         return text;
